@@ -9,7 +9,8 @@
     <title>Meeting Minutes</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&effect=fire-animation">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 
     <main>
     <div class="title">  
-        <h1>
+        <h1 class="font-effect-fire-animation">
             <b>Meeting Notes</b>
         </h1>
 
@@ -44,9 +45,7 @@
     </div>  
     <div class="attend-wrap">
         <div class="attend">
-            <h2 
-                id="Attendance">Attendance:
-            </h2>
+            <h2 id="Attendance">Attendance:</h2>
             <ol class="attend-ol">
                 <li><input type="checkbox">Cocobutter</li>
                 <li><input type="checkbox" checked>Professor Catwell</li>
@@ -64,13 +63,13 @@
 
             <h2>Main Points of Discussion:</h2>
 
-            <ol>
+            <ul>
             
                 <li>Art of Loafing 105</li>
                 <li>Meowing 110</li>
                 <li>World Domination</li>
     
-            </ol>
+            </ul>
         </div>
     </div>    
 
@@ -79,9 +78,8 @@
 
     <div class="grid"> 
         <div class="prev-agenda">
-            <h3>Previous Agenda:</h3>
+            <h2>Previous Agenda:</h2>
             <ol>
-            
                 <li><input type="checkbox" checked> Why Cats >>> Dogs</li>
                 <li><input type="checkbox" checked> How to Become a Cat 101</li>
                 <li><input type="checkbox"> Training Your Human</li>
@@ -155,8 +153,6 @@
                 <br />
                 <button type="button">Submit</button>
             </fieldset>
-            <br>
-            <br>
             <textarea>I've run out of stuff to meow about. :(</textarea>
             <br>
             <br>
@@ -168,10 +164,12 @@
                 <option value="Knocking stuff off tables">Knocking stuff off tables</option>
             </select>
         </form>
-    </div>    
-
-        <br>
-        <br>
+        <details>
+            <summary>Top Secret Plans to Inflict Cat-tastrophe</summary>
+            aha! You thought I would leave my paw-some plans here! 
+        </details>
+    </div>   
+    <br> 
         <label for="doggo-choice">Pick a doggo!</label>
         <input list="doggos" id="doggo-choice" name="doggo-choice"/>
         <datalist id="doggos">
@@ -182,22 +180,17 @@
         </datalist>
         <br>
         <br>
-
-        <details>
-            <summary>Top Secret Plans to Inflict Cat-tastrophe</summary>
-            aha! You thought I would leave my paw-some plans here! 
-        </details>
+        <img src="audioandvideo/doggos.jpg" 
+        alt="pic"
+        width="300"
+        height="400"
+        >
+        <p>
+            look at doggos after meeting (the enemy)
+        </p>
     </main>
     <br>
     <br>
-    <img src="audioandvideo/doggos.jpg" 
-    alt="pic"
-    width="300"
-    height="400"
-    >
-    <p>
-        look at doggos after meeting (the enemy)
-    </p>
 
     <footer>catpyright</footer>
 </body>

@@ -1,0 +1,263 @@
+:root{
+    --main-color: lightsteelblue;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: var(--main-color, lightgray);  
+    text-align: center;
+}
+h1 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+h2 ~ p{
+    font-weight: bold;
+}
+
+h2 + ol {
+    border: 4px ridge white;
+}
+
+ol:has(input:checked) {
+    background-color: lightcyan;
+}
+
+input[type="checkbox"]{
+    accent-color: darkblue;
+}
+.bigboi{
+    font-size: 3vw;
+    font-family: cursive;
+    max-width: fit-content;
+    margin-left: 5cm;
+    padding-top: 0.5in;
+}
+.navbar{
+    /** display -> flex for horizontal navbar
+    * need width, margin left/right in order to center
+    *
+    */
+    position:relative;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.navbar-ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid hsl(227, 100%, 23%);
+    
+}
+
+.navbar-ul a{
+    text-decoration: none;
+}
+
+.navbar-ul li{
+    display:flex;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 1em;
+    padding-bottom: 1;
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+.navbar-ul li:hover{
+    background-color: #bfcfe4;
+    /* border-bottom: 2px solid darkblue; */
+}
+
+.navbar-ul li:active {
+    background-color: darkblue;
+    color:color(display-p3 1 1 1);
+}
+
+.title {
+    display: inline;
+    justify-content: start;
+    padding:0;
+}
+.title h1{
+    display: flex;
+    width:fit-content;
+    margin-left: 50px;
+    margin-right:auto;
+}
+
+.clock{
+    display: inline;
+    margin-right: 950px;
+    min-width: 175px;
+    height: 30px;
+    margin-bottom: 2em;
+}
+
+/* div {
+    font-size: 20px;
+    font-family: cursive;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+} */
+
+.attend-wrap{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1em;
+    /* border-bottom: 2px solid #bfcfe4; */
+    padding-bottom: 2em;
+}
+
+.attend{
+    display: block;
+    margin-left: 100x;
+    margin-right: auto;
+    
+}
+
+.attend-ol{
+    display: block;
+    margin-left:100px;
+    margin-right: auto;
+    list-style: none;
+
+}
+
+.attend-ol li{
+    display:flex;
+    justify-content: start;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 10pt;
+    padding-bottom: 0.5in;
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+.agenda {
+    display:flex;
+    flex-flow: column wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.agenda h2{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agenda p{
+    text-align: center;
+    /*margin-left: 100px; */
+    margin-right: autox;
+    margin-left: auto;
+    padding-top: 0;
+}
+.agenda ol{
+    font-style: bold;
+    margin-right: auto;
+    margin-left: auto;
+}
+.agenda ol li{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.agenda ul {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-area: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.grid div{
+    text-align: center;
+    font-size: 1.5 rem;
+    margin-bottom: 2vh;
+}
+
+.prev-agenda{
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+.prev-agenda ol li{
+    padding-top: 1em;
+}
+
+.recent {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.recent ol{
+    font-weight: bold;
+    text-align: left;
+}
+
+.questions{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.refer{
+    padding-top: 2em;
+}
+
+#References{
+    margin-left: 10px;
+}
+
+.refer li{
+    list-style: none;
+    padding-top: 3em;
+}
+
+.grid form {
+    padding-top: 2em;
+}
+
+.grid form fieldset{
+    border: none;
+} 
+
+@media (max-width: 600px) {
+    .grid{
+        grid-template-columns: 2em;
+    }
+}
