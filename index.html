@@ -9,120 +9,127 @@
     <title>Meeting Minutes</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!--Header for logo/navigation-->
     <header>
-        <div><strong>Team Cat Codesaders Meetings <img src="favicon.ico" alt="Favicon"> [SAMPLE TEMPLATE]</strong></div>
+        <div class="bigboi"><strong>Team Cat Codesaders Meetings <img src="favicon.ico" alt="Favicon"> [SAMPLE TEMPLATE]</strong></div>
 
         <!--Navigation Bar-->
+    <div class="navbar">    
         <nav>
-            <ul>
-                <li><a href="#Agenda">Agenda</a></li>
-                <li><a href="#Attendance"> Attendance</a></li>
-                <li><a href="#Questions/Concerns">Questions/Concerns</a></li>
-                <li><a href="#Diagrams/References">References</a></li>
+            <ul class="navbar-ul">
+                    <li><a href="#Agenda">Agenda</a></li>
+                    <li><a href="#Attendance"> Attendance</a></li>
+                    <li><a href="#Questions/Concerns">Questions/Concerns</a></li>
+                    <li><a href="#Diagrams/References">References</a></li>
             </ul>
         </nav>
+    </div>    
     </header>
 
     <main>
-        <h1><b>Meeting Notes</b></h1>
+    <div class="title">  
+        <h1>
+            <b>Meeting Notes</b>
+        </h1>
 
         <input 
+        class="clock"
         type="datetime-local"
         value="2025-04-06T14:56"
         />
-        <br>
+    </div>  
+    <div class="attend-wrap">
+        <div class="attend">
+            <h2 
+                id="Attendance">Attendance:
+            </h2>
+            <ol class="attend-ol">
+                <li><input type="checkbox">Cocobutter</li>
+                <li><input type="checkbox" checked>Professor Catwell</li>
+                <li><input type="checkbox">Admiral Meowington</li>
+                <li><input type="checkbox" checked>Copurrrnicus</li>
+                <li><input type="checkbox" checked>Litten</li>
+            </ol>
+        </div>
+        <div class="agenda">
+            <h2 id="Agenda"> Agenda: </h2>
+                    
+            <p>
+                Please make sure to refer to the last document that contained the minutes for the previous meeting before referring to this one :3
+            </p>
 
-        <img src="audioandvideo/doggos.jpg" 
-        alt="pic"
-        width="300"
-        height="400"
-        >
-        <p>
-            look at doggos before meeting (the enemy)
-        </p>
-        <br>
-        <br>
-        <br>
-        
-        <h2 id="Attendance">Attendance</h2>
+            <h2>Main Points of Discussion:</h2>
 
-        <ol>
-            <li><input type="checkbox">Cocobutter</li>
-            <li><input type="checkbox" checked>Professor Catwell</li>
-            <li><input type="checkbox">Admiral Meowington</li>
-            <li><input type="checkbox" checked>Copurrrnicus</li>
-            <li><input type="checkbox" checked>Litten</li>
-        </ol>
-
-        <hr style="width:30%;text-align:left;margin-left:0"> 
-
-        <h2 id="Agenda"> Agenda: </h2>
-        
-        <h2>Main Points of Discussion:</h2>
-
-        <p>Please make sure to refer to the last document that contained the minutes for the previous meeting before referring to this one :3</p>
-        <ol>
-        
-            <li>Art of Loafing 105</li>
-            <li>Meowing 110</li>
-            <li>World Domination</li>
-
-        </ol>
-
-        <h3>Previous Agenda:</h3>
-        <ol>
+            <ol>
             
-            <li><input type="checkbox" checked> Why Cats >>> Dogs</li>
-            <li><input type="checkbox" checked> How to Become a Cat 101</li>
-            <li><input type="checkbox"> Training Your Human</li>
-            <li><input type="checkbox"/> Ultimate Catsecrecy</li>
-        </ol>
+                <li>Art of Loafing 105</li>
+                <li>Meowing 110</li>
+                <li>World Domination</li>
+    
+            </ol>
+        </div>
+    </div>    
 
-        <h3>Recent Meeting Notes:</h3>
 
-        <ol>
-            <li>Meow!</li>
-            <li>Meow <i>meow</i> meow!</li>
-            <li><em>mEOw!</em></li>
+
+
+    <div class="grid"> 
+        <div class="prev-agenda">
+            <h3>Previous Agenda:</h3>
+            <ol>
             
-        </ol>
+                <li><input type="checkbox" checked> Why Cats >>> Dogs</li>
+                <li><input type="checkbox" checked> How to Become a Cat 101</li>
+                <li><input type="checkbox"> Training Your Human</li>
+                <li><input type="checkbox"/> Ultimate Catsecrecy</li>
+            </ol>
+        </div>  
 
-        <hr style="width:30%;text-align:left;margin-left:0"> 
+        <div class="recent">
+            <h3>Recent Meeting Notes:</h3>
 
-        <h2 id="#Questions">Questions/Concerns?</h2>
-        <ul>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-        </ul>
+            <ol>
+                <li>Meow!</li>
+                <li>Meow <i>meow</i> meow!</li>
+                <li><em>mEOw!</em></li>
+            
+            </ol>
+        </div>
+    
+        <div class="questions">
+            <h2 id="#Questions">Questions/Concerns?</h2>
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </div>
 
-        <hr style="width:30%;text-align:left;margin-left:0"> 
 
-        <h2 id="References"><span style="color:red">References</span></h2>
-        <ul>
-            <li>
-            <audio src="audioandvideo/Something_There_(From_Beauty_and_the_Beast__Audio_Only)_1.mp3" controls>
-            </audio> 
-            </li>
-            <li> 
-                <video width="320" height="240" src="audioandvideo/Untitled_design_2.mp4" controls>
-                </video>
-                <p>
-                    Here is a video of a drawing I made (don't watch plz)
-                </p>
-            </li>
-            <li> </li>
-        </ul>
-        
-        <h2>Secondary Attendance Form</h2>
+        <div class="refer">
+            <h2 id="References"><span style="color:red">References</span></h2>
+            <ul>
+                <li>
+                <audio src="audioandvideo/Something_There_(From_Beauty_and_the_Beast__Audio_Only)_1.mp3" controls>
+                </audio> 
+                </li>
+                <li> 
+                    <video width="320" height="240" src="audioandvideo/Untitled_design_2.mp4" controls>
+                    </video>
+                    <p>
+                        Here is a video of a drawing I made (don't watch plz)
+                    </p>
+                </li>
+                <li> </li>
+            </ul>
+        </div>
         <form>
-            <br>
+            <h2>Secondary Attendance Form</h2>
             <br>
             <label for="fname">First name: </label>
             <input type="text" id="fname" name="fname"/>
@@ -138,7 +145,7 @@
 
                 <input type="radio" id="doggy" name="doggo" value="K"/>
                 <label for="dog">Milo</label>
-                <br />
+                <br/>
                 <input type="radio" id="dog" name="doggo" value="K"/>
                 <label for="dog">Milo</label>
                 <br />
@@ -161,6 +168,8 @@
                 <option value="Knocking stuff off tables">Knocking stuff off tables</option>
             </select>
         </form>
+    </div>    
+
         <br>
         <br>
         <label for="doggo-choice">Pick a doggo!</label>
@@ -181,6 +190,15 @@
     </main>
     <br>
     <br>
+    <img src="audioandvideo/doggos.jpg" 
+    alt="pic"
+    width="300"
+    height="400"
+    >
+    <p>
+        look at doggos after meeting (the enemy)
+    </p>
+
     <footer>catpyright</footer>
 </body>
 </html>
