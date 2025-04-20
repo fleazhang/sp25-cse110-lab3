@@ -16,12 +16,14 @@ team.
 Standup File: 
 
 > allows for constant communication between members
-
+>
 > share task completions and discoveries
 
 Html updates:
 > added several `div` tags for styling purposes
+>
+> moved around certain elements for future styling purposes 
 
-> moved around certain elements for future styling purposes
+
 
 
